@@ -1,0 +1,5 @@
+df = pd.read_excel('/Users/jayakumar/Documents/Gomathi_da_notes/Phython/hackathon/Cardiac_Outcomes.xlsx', 'Demography')
+print(df)
+df = df.dropna()
+fig = px.sunburst(df, path=['ageCat', 'BMI','occupation'], title='Sub Burst Chart')
+fig.show()
